@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro para clientes</title>
+    <link href="aplication.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="menu">
+        <a class="ativo" href="#">Início</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#produtos">Produtos</a>
+    </div>
+    <div class="form">
+        <form name="formCliente">
+            <fieldset>
+                <legend>Cadastro de Clientes</legend>
+            <div class="form-group">
+                <label>Código</label>
+                <input class="input-control" type="number" size="5" id="codigo"/>
+
+                <label class="right-inline">Nome</label>
+                <input class="input-control" type="text" size="40" id="nome" />
+
+                <label class="right-inline">CEP</label>
+                <input class="input-control" type="text" size="10" id="cep" />
+            </div>
+            <div class="form-group">
+                <label>Endereço</label>
+                <input class="input-control" type="text" size="40" id="endereco"/>
+
+                <label class="right-inline">Bairro</label>
+                <input class="input-control" type="text" size="20" id="bairro"/>
+
+                <label class="right-inline">Ponto de referencia</label>
+                <input class="input-control" type="text" size="30" id="ponto de referencia" />
+
+                <label class="right-inline">Cidade</label>
+                <input class="input-control" type="text" size="30" id="cidade" />
+
+                <label class="right-inline">tel residencial</label>
+                <input class="input-control" type="text" size="30" id="tel residencial" />
+
+            </div>
+            <div class="form-group">
+                <label>Observações</label>
+                <textarea class="input-control" id="observacoes"></textarea>
+            </div>
+            <div class="form-group">
+                <label></label>
+                <button id="salvar"> Salvar</button>
+                <button id="cancelar"> Cancelar</button>
+            </div>
+            </fieldset>            
+        </form>
+    </div>
+    
+    <div id="listagem"></div>
+    
+    <script src="cliente.js"></script>
+</body>
+</html>
